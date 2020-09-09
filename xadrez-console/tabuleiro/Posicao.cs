@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return linha+", "+coluna.ToString();
+            return linha + ", " + coluna.ToString();
         }
     }
 }
