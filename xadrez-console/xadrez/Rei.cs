@@ -62,13 +62,13 @@ namespace xadrez
             }
 
             // esquerda
-            pos.definirValor(posicao.linha , posicao.coluna-1);
+            pos.definirValor(posicao.linha, posicao.coluna - 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
             // noroeste
-            pos.definirValor(posicao.linha - 1, posicao.coluna-1);
+            pos.definirValor(posicao.linha - 1, posicao.coluna - 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;

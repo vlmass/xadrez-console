@@ -43,7 +43,7 @@
         {
             if (peca(pos) == null)
             {
-                return null; 
+                return null;
             }
             Peca aux = peca(pos);
             aux.posicao = null;
