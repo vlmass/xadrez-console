@@ -1,6 +1,7 @@
 ﻿using System;
 using tabuleiro;
 using xadrez_console.xadrez;
+//Victor Massenhani
 
 namespace xadrez_console
 {
@@ -18,24 +19,17 @@ namespace xadrez_console
                     {
                         Console.Clear();
                         Tela.imprimirPartida(partida);
-
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
-
                         partida.validaPosicaoDeOrigem(origem);
-
                         bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
-
-
                         Console.Clear();
                         Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
-
                         Console.WriteLine();
                         Console.Write("Destino: ");
                         Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeDestino(origem, destino);
-
                         partida.realizaJogada(origem, destino);
                     }
 
@@ -44,14 +38,11 @@ namespace xadrez_console
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
-
                 }
 
                 Console.Clear();
                 Tela.imprimirPartida(partida);
                 Console.ReadLine();
-
-
             }
 
             catch (TabuleiroException e)
