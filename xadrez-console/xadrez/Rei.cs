@@ -1,5 +1,4 @@
-﻿using System.Threading;
-using tabuleiro;
+﻿using tabuleiro;
 using xadrez_console.xadrez;
 
 namespace xadrez
